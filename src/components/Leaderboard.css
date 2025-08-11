@@ -1,0 +1,272 @@
+.leaderboard {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: fit-content;
+}
+
+.leaderboard h2 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.name-input-section {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.score-display h3 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.score-display p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #f39c12;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.name-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.name-form label {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.name-form input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2c3e50;
+  transition: all 0.3s ease;
+}
+
+.name-form input:focus {
+  outline: none;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.submit-btn,
+.skip-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+}
+
+.skip-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.skip-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.game-over-section {
+  background: rgba(231, 76, 60, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.final-score h3 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.score-number {
+  color: #f39c12;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.new-game-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.new-game-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.leaderboard-list {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.leaderboard-header {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1fr 1fr;
+  gap: 10px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.no-scores {
+  padding: 30px 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.no-scores p {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+.scores-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.score-entry {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1fr 1fr;
+  gap: 10px;
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+}
+
+.score-entry:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.score-entry.top-1 {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.3) 0%, rgba(255, 193, 7, 0.3) 100%);
+  color: white;
+  font-weight: bold;
+}
+
+.score-entry.top-2 {
+  background: linear-gradient(135deg, rgba(192, 192, 192, 0.3) 0%, rgba(169, 169, 169, 0.3) 100%);
+  color: white;
+  font-weight: bold;
+}
+
+.score-entry.top-3 {
+  background: linear-gradient(135deg, rgba(205, 127, 50, 0.3) 0%, rgba(184, 115, 51, 0.3) 100%);
+  color: white;
+  font-weight: bold;
+}
+
+.rank {
+  font-weight: bold;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.score {
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.date {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.leaderboard-info {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+}
+
+.leaderboard-info p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+}
+
+.leaderboard-info p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .leaderboard {
+    padding: 15px;
+  }
+  
+  .leaderboard-header,
+  .score-entry {
+    grid-template-columns: 0.5fr 1fr 0.8fr 0.7fr;
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+  
+  .form-buttons {
+    flex-direction: column;
+  }
+  
+  .submit-btn,
+  .skip-btn {
+    width: 100%;
+  }
+}
