@@ -20,13 +20,24 @@
 }
 
 .score {
-  background: rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
   padding: 10px 20px;
   border-radius: 25px;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(238, 90, 36, 0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  animation: scoreGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes scoreGlow {
+  from {
+    box-shadow: 0 4px 15px rgba(238, 90, 36, 0.3);
+  }
+  to {
+    box-shadow: 0 6px 20px rgba(238, 90, 36, 0.5);
+  }
 }
 
 .controls {
