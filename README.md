@@ -5,6 +5,11 @@ A modern, responsive Snake Game built with React featuring a persistent leaderbo
 ## ✨ Features
 
 - **Classic Snake Gameplay**: Navigate the snake to eat food and grow longer
+- **Power-up System**: Collect special items for temporary bonuses
+  - ⚡ Speed Boost: Double movement speed for 5 seconds
+  - 💎 Double Points: Earn 2x points for 8 seconds
+  - 🛡️ Invincibility: Pass through walls and yourself for 6 seconds
+  - 🔶 Snake Shrink: Reduce snake length for 4 seconds
 - **Persistent Leaderboard**: Scores are saved locally in your browser
 - **Modern UI/UX**: Beautiful glassmorphism design with smooth animations
 - **Responsive Design**: Works perfectly on desktop and mobile devices
@@ -15,15 +20,21 @@ A modern, responsive Snake Game built with React featuring a persistent leaderbo
 - **Score Tracking**: Real-time score display and final score recording
 - **Top Player Highlighting**: Special styling for top 3 players
 - **Name Input System**: Save your score with your name or play anonymously
+- **Active Effects Display**: Real-time status of active power-ups with countdown timers
 
 ## 🎮 How to Play
 
 1. **Start the Game**: Press any key to begin
 2. **Control the Snake**: Use arrow keys to move in different directions
 3. **Eat Food**: Collect the orange food to grow and earn points (10 points each)
-4. **Avoid Collisions**: Don't hit the walls or your own tail
-5. **Pause/Resume**: Press spacebar to pause or resume the game
-6. **Save Your Score**: When the game ends, enter your name to save your score
+4. **Collect Power-ups**: Look for colored circles with symbols for special effects
+   - ⚡ Green: Speed Boost (5 seconds)
+   - 💎 Pink: Double Points (8 seconds)
+   - 🛡️ Yellow: Invincibility (6 seconds)
+   - 🔶 Orange: Snake Shrink (4 seconds)
+5. **Avoid Collisions**: Don't hit the walls or your own tail (unless invincible!)
+6. **Pause/Resume**: Press spacebar to pause or resume the game
+7. **Save Your Score**: When the game ends, enter your name to save your score
 
 ## 🚀 Installation & Setup
 
@@ -63,10 +74,12 @@ A modern, responsive Snake Game built with React featuring a persistent leaderbo
 
 ### Game Mechanics
 - **Grid-based Movement**: 20x20 grid for precise control
-- **Collision Detection**: Wall and self-collision detection
+- **Collision Detection**: Wall and self-collision detection (disabled during invincibility)
 - **Food Generation**: Random food placement
-- **Score System**: 10 points per food item
-- **Game Speed**: Optimized speed for smooth gameplay
+- **Power-up System**: 20% chance to spawn special items after eating food
+- **Score System**: 10 points per food item (doubled with power-up)
+- **Dynamic Game Speed**: Adjustable speed with power-up effects
+- **Visual Effects**: Rainbow colors during invincibility, glowing power-ups
 
 ### Leaderboard System
 - **Local Storage**: Scores persist between browser sessions
